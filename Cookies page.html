@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie-Sweet World</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg,#fff5cc,#ffe6ff);
+      padding: 20px;
+      text-align: center;
+      color: #4d2c3d;
+    }
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #ff6699;
+      margin: 30px;
+    }
+    .cake video, 
+    .cake iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+    }
+    .cake {
+      background:#fffafc;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .grid { 
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+    }
+    .cake p {
+      display:block;
+      margin-top: 10px;
+      font-weight: bold; 
+    }
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #ff6699;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #ff3366;
+      transform: scale(1.05);
+    }
+
+    /* 📱 تابلت */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+      .cake video, 
+      .cake iframe {
+        height: 180px;
+      }
+    }
+
+    /* 📱 موبايل صغير */
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .cake video, 
+      .cake iframe {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍪 Our Cookies 🍪</h1>
+    <div class="grid">
+      
+      <!-- أول ٤ فيديوهات محلية -->
+      <div class="cake">
+        <video controls>
+          <source src="Chocolate cookies.mp4" type="video/mp4">
+        </video>
+        <p>Chocolate Chip Cookie 🍫</p>
+      </div>
+      <div class="cake">
+        <video controls>
+          <source src="Ometal cookies.mp4" type="video/mp4">
+        </video>
+        <p>Oatmeal Cookie 🥣</p>
+      </div>
+      <div class="cake">
+        <video controls>
+          <source src="cookies.mp4" type="video/mp4">
+        </video>
+        <p>Peanut Butter Cookie 🥜</p>
+      </div>
+      <div class="cake">
+        <video controls>
+          <source src="sparkel cookie.mp4" type="video/mp4">
+        </video>
+        <p>Rainbow Sprinkle Cookie 🌈</p>
+      </div>
+      
+      <!-- ٤ فيديوهات من يوتيوب -->
+      <div class="cake">
+        <iframe src="https://www.youtube.com/embed/Ir-Uox123kE" frameborder="0" allowfullscreen></iframe>
+        <p>Sugar Cookie 🍬</p>
+      </div>
+      <div class="cake">
+        <iframe src="https://www.youtube.com/embed/lyDtl_PMAGg" frameborder="0" allowfullscreen></iframe>
+        <p>Ginger Cookie 🍂</p>
+      </div>
+      <div class="cake">
+        <iframe src="https://www.youtube.com/embed/aVSR44DvV1w" frameborder="0" allowfullscreen></iframe>
+        <p>Macaron Cookie 💖</p>
+      </div>
+      <div class="cake">
+        <iframe src="https://www.youtube.com/embed/__6mfv7NBWw" frameborder="0" allowfullscreen></iframe>
+        <p>Shortbread Cookie 🍯</p>
+      </div>
+    </div> 
+    <a href="index.html">Back to home</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake-Sweet World</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg,#fff5cc,#ffe6ff);
+      padding: 20px;
+      text-align: center;
+      color: #4d2c3d;
+    }
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #ff6699;
+      margin: 30px;
+    }
+    .cake img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .cake {
+      background:#fffafc;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .grid { 
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+    }
+    .cake p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #ff6699;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    a:hover {
+      background: #ff3366;
+      transform: scale(1.05);
+    }
+
+    /* 📱 موبايل */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+      .cake img {
+        height: 120px;
+      }
+    }
+
+    /* 📱 شاشات أصغر (موبايل صغير) */
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .cake img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🍰 Our Cakes 🍰</h1>
+    <div class="grid">
+      <div class="cake">
+        <img src="https://i0.wp.com/www.chocotopia.cz/wp-content/uploads/2025/02/cokoladovy-dort-recept-2-1024x1014.webp" alt="">
+        <p>Chocolate Cake 🍫</p>
+      </div>
+      <div class="cake">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStX_ebPIn8pSj9qrWmfmqibl56pkIYR4u2Uw&s" alt="">
+        <p>Red Velvet Cake ❤️</p>
+      </div>
+      <div class="cake">
+        <img src="https://xoxobella.com/wp-content/uploads/2025/02/Strawberry-Shortcake-Cheesecake-featured.jpg" alt="">
+        <p>Cheesecake 🍰</p>
+      </div>
+      <div class="cake">
+        <img src="https://www.thepancakeprincess.com/wp-content/uploads/2024/05/strawberry-cake-6-701x1024.jpg" alt="">
+        <p>Strawberry Cake 🍓</p>
+      </div>
+      <div class="cake">
+        <img src="https://atsloanestable.com/wp-content/uploads/2022/01/small-vanilla-cake3.jpg" alt="">
+        <p>Vanilla Cake 🎂</p>
+      </div>
+      <div class="cake">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMy5kS2gEYP5LxYIHQ4dBE1XMB9uY2PepH6A&s" alt="">
+        <p>Lemon Cake 🍋</p>
+      </div>
+      <div class="cake">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPmPxrWk6ZdftIN2We2RGwv7fDd9P5AQ8vA&s" alt="">
+        <p>Carrot Cake 🥕</p>
+      </div>
+      <div class="cake">
+        <img src="https://addictedtodates.com/wp-content/uploads/2022/04/vegan-black-forest-cake.jpg" alt="">
+        <p>Black Forest Cake 🌲</p>
+      </div>
+    </div>
+    <a href="index.html">Back to home</a>
+  </div>
+</body>
+</html>
